@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gemini AI Tutor</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="header">
+        <div class="brand">
+            <div class="logo">✦</div>
+
+            <div>
+                <h1>Gemini AI Tutor</h1>
+                <p>Python Full Stack with AI</p>
+            </div>
+        </div>
+
+        <button id="clearBtn"
+                class="clear-btn"
+                type="button">
+            New Chat
+        </button>
+    </header>
+
+    <main id="chatMessages"
+          class="chat-messages"
+          aria-live="polite">
+
+        <div class="message bot">
+            <div class="avatar">✦</div>
+
+            <div class="bubble">
+                <strong>Hello! I'm your AI Tutor.</strong>
+                <p>
+                    Ask me about Python, FastAPI,
+                    SQL, React, or programming.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="status"
+         class="status"
+         role="status"></div>
+
+    <form id="chatForm" class="chat-form">
+
+        <textarea
+            id="messageInput"
+            placeholder="Ask your programming question..."
+            rows="2"
+            maxlength="4000"
+            required
+        ></textarea>
+
+        <button id="sendBtn"
+                type="submit">
+            Send ➤
+        </button>
+
+    </form>
+
+    <footer>
+        AI-generated responses can contain mistakes.
+        Verify important information.
+    </footer>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
